@@ -1,0 +1,111 @@
+# Nmap 7.60 scan initiated Tue Dec 13 15:33:56 2022 as: nmap -sV -vvv -T4 -oN nmap-init -p- 10.10.15.74
+Nmap scan report for ip-10-10-15-74.eu-west-1.compute.internal (10.10.15.74)
+Host is up, received arp-response (0.00044s latency).
+Scanned at 2022-12-13 15:33:57 GMT for 885s
+Not shown: 65500 filtered ports
+Reason: 65500 no-responses
+PORT      STATE SERVICE             REASON          VERSION
+53/tcp    open  domain              syn-ack ttl 128 Microsoft DNS
+80/tcp    open  http                syn-ack ttl 128 Microsoft IIS httpd 10.0
+88/tcp    open  kerberos-sec        syn-ack ttl 128 Microsoft Windows Kerberos (server time: 2022-12-13 15:47:43Z)
+135/tcp   open  msrpc               syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn         syn-ack ttl 128 Microsoft Windows netbios-ssn
+389/tcp   open  ldap                syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: windcorp.thm0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?       syn-ack ttl 128
+464/tcp   open  kpasswd5?           syn-ack ttl 128
+593/tcp   open  ncacn_http          syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ldapssl?            syn-ack ttl 128
+2179/tcp  open  vmrdp?              syn-ack ttl 128
+3268/tcp  open  ldap                syn-ack ttl 128 Microsoft Windows Active Directory LDAP (Domain: windcorp.thm0., Site: Default-First-Site-Name)
+3269/tcp  open  globalcatLDAPssl?   syn-ack ttl 128
+3389/tcp  open  ms-wbt-server       syn-ack ttl 128 Microsoft Terminal Services
+5222/tcp  open  jabber              syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5223/tcp  open  ssl/jabber          syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5229/tcp  open  jaxflow?            syn-ack ttl 128
+5262/tcp  open  jabber              syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5263/tcp  open  ssl/jabber          syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5269/tcp  open  xmpp                syn-ack ttl 128 Wildfire XMPP Client
+5270/tcp  open  ssl/xmpp            syn-ack ttl 128 Wildfire XMPP Client
+5275/tcp  open  jabber              syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5276/tcp  open  ssl/jabber          syn-ack ttl 128 Ignite Realtime Openfire Jabber server 3.10.0 or later
+5985/tcp  open  http                syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+7070/tcp  open  http                syn-ack ttl 128 Jetty 9.4.18.v20190429
+7443/tcp  open  ssl/http            syn-ack ttl 128 Jetty 9.4.18.v20190429
+7777/tcp  open  socks5              syn-ack ttl 128 (No authentication; connection failed)
+9090/tcp  open  zeus-admin?         syn-ack ttl 128
+9091/tcp  open  ssl/xmltec-xmlmail? syn-ack ttl 128
+9389/tcp  open  mc-nmf              syn-ack ttl 128 .NET Message Framing
+49668/tcp open  msrpc               syn-ack ttl 128 Microsoft Windows RPC
+49674/tcp open  ncacn_http          syn-ack ttl 128 Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc               syn-ack ttl 128 Microsoft Windows RPC
+49676/tcp open  msrpc               syn-ack ttl 128 Microsoft Windows RPC
+49745/tcp open  msrpc               syn-ack ttl 128 Microsoft Windows RPC
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9090-TCP:V=7.60%I=7%D=12/13%Time=63989E9F%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,11D,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2013\x20Dec\x20
+SF:2022\x2015:47:43\x20GMT\r\nLast-Modified:\x20Fri,\x2031\x20Jan\x202020\
+SF:x2017:54:10\x20GMT\r\nContent-Type:\x20text/html\r\nAccept-Ranges:\x20b
+SF:ytes\r\nContent-Length:\x20115\r\n\r\n<html>\n<head><title></title>\n<m
+SF:eta\x20http-equiv=\"refresh\"\x20content=\"0;URL=index\.jsp\">\n</head>
+SF:\n<body>\n</body>\n</html>\n\n")%r(JavaRMI,C3,"HTTP/1\.1\x20400\x20Ille
+SF:gal\x20character\x20CNTL=0x0\r\nContent-Type:\x20text/html;charset=iso-
+SF:8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\
+SF:x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x0<
+SF:/pre>")%r(WMSRequest,C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CN
+SF:TL=0x1\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Leng
+SF:th:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1>
+SF:<pre>reason:\x20Illegal\x20character\x20CNTL=0x1</pre>")%r(ibm-db2-das,
+SF:C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Typ
+SF:e:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnecti
+SF:on:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illeg
+SF:al\x20character\x20CNTL=0x0</pre>")%r(SqueezeCenter_CLI,9B,"HTTP/1\.1\x
+SF:20400\x20No\x20URI\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\n
+SF:Content-Length:\x2049\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message
+SF:\x20400</h1><pre>reason:\x20No\x20URI</pre>")%r(informix,C3,"HTTP/1\.1\
+SF:x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Type:\x20text/htm
+SF:l;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r
+SF:\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20characte
+SF:r\x20CNTL=0x0</pre>")%r(drda,C3,"HTTP/1\.1\x20400\x20Illegal\x20charact
+SF:er\x20CNTL=0x0\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nCont
+SF:ent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20
+SF:400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x0</pre>")%r(HTTP
+SF:Options,56,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2013\x20Dec\x20202
+SF:2\x2015:47:48\x20GMT\r\nAllow:\x20GET,HEAD,POST,OPTIONS\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9091-TCP:V=7.60%T=SSL%I=7%D=12/13%Time=63989EAF%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,11D,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2013\x20D
+SF:ec\x202022\x2015:47:59\x20GMT\r\nLast-Modified:\x20Fri,\x2031\x20Jan\x2
+SF:02020\x2017:54:10\x20GMT\r\nContent-Type:\x20text/html\r\nAccept-Ranges
+SF::\x20bytes\r\nContent-Length:\x20115\r\n\r\n<html>\n<head><title></titl
+SF:e>\n<meta\x20http-equiv=\"refresh\"\x20content=\"0;URL=index\.jsp\">\n<
+SF:/head>\n<body>\n</body>\n</html>\n\n")%r(HTTPOptions,56,"HTTP/1\.1\x202
+SF:00\x20OK\r\nDate:\x20Tue,\x2013\x20Dec\x202022\x2015:47:59\x20GMT\r\nAl
+SF:low:\x20GET,HEAD,POST,OPTIONS\r\n\r\n")%r(RTSPRequest,AD,"HTTP/1\.1\x20
+SF:400\x20Unknown\x20Version\r\nContent-Type:\x20text/html;charset=iso-885
+SF:9-1\r\nContent-Length:\x2058\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20
+SF:Message\x20400</h1><pre>reason:\x20Unknown\x20Version</pre>")%r(RPCChec
+SF:k,C7,"HTTP/1\.1\x20400\x20Illegal\x20character\x20OTEXT=0x80\r\nContent
+SF:-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2071\r\nConn
+SF:ection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20I
+SF:llegal\x20character\x20OTEXT=0x80</pre>")%r(DNSVersionBindReq,C3,"HTTP/
+SF:1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Type:\x20tex
+SF:t/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20cl
+SF:ose\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20cha
+SF:racter\x20CNTL=0x0</pre>")%r(DNSStatusRequest,C3,"HTTP/1\.1\x20400\x20I
+SF:llegal\x20character\x20CNTL=0x0\r\nContent-Type:\x20text/html;charset=i
+SF:so-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>B
+SF:ad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0
+SF:x0</pre>")%r(Help,9B,"HTTP/1\.1\x20400\x20No\x20URI\r\nContent-Type:\x2
+SF:0text/html;charset=iso-8859-1\r\nContent-Length:\x2049\r\nConnection:\x
+SF:20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20No\x20URI<
+SF:/pre>")%r(SSLSessionReq,C5,"HTTP/1\.1\x20400\x20Illegal\x20character\x2
+SF:0CNTL=0x16\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-
+SF:Length:\x2070\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400<
+SF:/h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x16</pre>");
+MAC Address: 02:BA:C6:FB:A9:B9 (Unknown)
+Service Info: Host: FIRE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 13 15:48:42 2022 -- 1 IP address (1 host up) scanned in 886.05 seconds
